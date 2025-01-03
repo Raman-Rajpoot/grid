@@ -1,0 +1,71 @@
+/* Grid Container */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  border: 4px solid #444; /* Border around the entire grid */
+  border-radius: 8px; /* Optional rounded corners for the grid container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Optional shadow for better visual appeal */
+}
+
+/* Default colors for the red, green, and blue custom properties */
+:root {
+  --red-color: 128;
+  --green-color: 0;
+  --blue-color: 128;
+}
+
+/* Grid Row */
+.grid-row {
+  display: flex;
+}
+
+/* Grid Cell */
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  margin: 0.5px;
+  background-color: black;
+  border: 1px solid #333; /* Border around each cell */
+  border-radius: 3px;
+  transition: background-color 0.1s linear;
+}
+
+/* Different rain lengths with varying opacity */
+.grid-cell.rain-length-1 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 1);
+}
+
+.grid-cell.rain-length-2 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.9);
+}
+
+.grid-cell.rain-length-3 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.8);
+}
+
+.grid-cell.rain-length-4 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.7);
+}
+
+.grid-cell.rain-length-5 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.6);
+}
+
+.grid-cell.rain-length-6 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.5);
+}
+
+.grid-cell.rain-length-7 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.4);
+}
+
+.grid-cell.rain-length-8 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.3);
+}
+
+.grid-cell.rain-length-9 {
+  background: rgba(var(--red-color), var(--green-color), var(--blue-color), 0.2);
+}
