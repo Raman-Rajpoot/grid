@@ -26,7 +26,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       changeColorRandomly(); // Change color every 5 seconds
-    }, 5000); // 5000 ms = 5 seconds
+    }, 3000); // 5000 ms = 5 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
@@ -68,7 +68,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       updateRain();
-    }, 50); // Adjust interval for smooth animation
+    }, 70); // Adjust interval for smooth animation
 
     return () => clearInterval(interval);
   }, [activeDrops, columnStates]);
